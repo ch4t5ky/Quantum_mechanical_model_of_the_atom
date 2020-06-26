@@ -1,28 +1,10 @@
 import matplotlib.pyplot as plt
 from math import *
-import numpy as np
 
-E_0 = 27.07 * 1.6 / (10 ** 19)
+
 a = 0.529
-R_H = 10957758.3407
-R_y = R_H * 3 * (10 ** 8) * 6.626 / (10 ** 34)
-n = [1, 2, 3, 4]
 dp = 0.01
 fig, ax = plt.subplots(figsize=(5, 5))
-E = [0] * 4
-
-
-def findEi(i):
-    return -R_y / (n[i] ** 2)
-
-
-def findEpsilon(E):
-    return -E / E_0
-
-
-def findBetta(epsilon):
-    return sqrt(2 * epsilon)
-
 
 R = []
 r = []
